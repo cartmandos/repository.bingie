@@ -11,7 +11,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-	<addon id="skin.titan.leiabeta-bingie.MODE" name="Titan bingie MODE for Kodi Leia" provider-name="marcelveldt, cartmandos, mardukl, mgonzales" version="0.0.16">
+	<addon id="skin.titan.leiabeta.bingie.mode" name="Titan bingie MODE for Kodi Leia" provider-name="marcelveldt, cartmandos, mardukl, mgonzales" version="0.0.16">
 		<requires>
 			<import addon="xbmc.gui" version="5.13.0" />
 			<import addon="script.skinshortcuts" version="0.6.5" />
