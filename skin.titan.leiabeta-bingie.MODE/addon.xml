@@ -41,10 +41,10 @@
 		<summary lang="zh_CN">MediaPortal's Titan bingie MODE for Kodi Leia 皮肤富含大量的功能。</summary>
 		<platform>all</platform>
 		<license>GPL v2.0</license>
-		<forum>http://forum.kodi.tv/forumdisplay.php?fid=212</forum>
-		<website>http://forum.kodi.tv/forumdisplay.php?fid=212</website>
+		<forum>https://forum.kodi.tv/showthread.php?tid=330749</forum>
+		<website>https://forum.kodi.tv/showthread.php?tid=330749</website>
 		<email></email>
-		<source>https://github.com/marcelveldt/skin.titan.leiabeta</source>
+		<source>https://github.com/cartmandos/skin.titan.leiabeta-bingie.MODE</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -61,8 +61,6 @@
 		</assets>
 		<news>
             Follow the forum thread about the latest news for the skin.
-            Also have a look at the Trello board to be informed about the skin development:
-            https://trello.com/b/VPlkyvMp/titan-skin
         </news>
 	</extension>
 </addon>
