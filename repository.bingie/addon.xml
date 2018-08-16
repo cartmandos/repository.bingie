@@ -2,7 +2,6 @@
 <addon id="repository.bingie" version="1.0.0" name="bingie repository" provider-name="cartmandos">
 	<extension point="xbmc.addon.repository" name="bingie repository">
 		<info compressed="false">https://raw.githubusercontent.com/cartmandos/repository.bingie/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/cartmandos/repository.bingie/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://raw.githubusercontent.com/cartmandos/repository.bingie/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
