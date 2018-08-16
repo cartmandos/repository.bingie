@@ -44,10 +44,9 @@
 		<forum>https://forum.kodi.tv/showthread.php?tid=330749</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=330749</website>
 		<email></email>
-		<source>https://github.com/cartmandos/skin.titan.leiabeta-bingie.MODE</source>
+		<source>https://github.com/cartmandos/skin.titan.bingie.mode</source>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
 			<screenshot>_screenshots/screenshot000.jpg</screenshot>
 			<screenshot>_screenshots/screenshot001.jpg</screenshot>
 			<screenshot>_screenshots/screenshot002.jpg</screenshot>
