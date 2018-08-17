@@ -1,0 +1,25 @@
+1.1.25
+- fixed playtrailer method (and also ignoring dirs on youtube)
+- added new method: playtraileryoutube
+- added new listitem property - CastListing.
+
+API:
+CastListing -
+Window(Home).Property(SkinHelper.ListItem.CastListing)
+returns the cast list of a media formatted as ''actor1, actor2, actor3, ..." instead of kodi's native "actor1[cr]actor2[cr]actor3[cr]..."
+
+playtraileryoutube - 
+use by calling in skin:
+RunScript(script.skin.helper.service,ACTION=playtraileryoutube,mode=window/fullscreen,title=TITLE_NAME,local=BOOLEAN)
+
+@param
+mode - accepts either ''window'' or ''fullscreen' string. Note that playtrailer doesn't require this parameter and will play WINDOWED if omitted. 
+title - string to look a trailer for in youtube (required param)
+local - boolean that if true will look for a trailer in kodi's SYSTEM LANGUAGE, if omitted will be considered as false.
+
+for example:
+RunScript(script.skin.helper.service,ACTION=playtraileryoutube,title=$INFO[ListItem.Title],local=$INFO[Skin.String(RegionalTrailers)])
+
+Plays trailer auto (no dialog) for the title requested, windowed or fullscreen with regional language capability.
+This method runs faster than playtrailer due to removed double-check that current focused media is the media 
+that executed the script (a pro and a con in itself). Also this method does automatically search youtube and doesn't look for local/nfo listed trailer(!) AND allows to search for a regional trailer.
