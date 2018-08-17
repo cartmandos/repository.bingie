@@ -77,4 +77,80 @@
 			</news>
 		</extension>
 	</addon>
+	<addon id="resource.images.busyspinners.basic" name="Animated Busy Spinners Pack" version="1.0.2" provider-name="marcelveldt,marduk">
+		<extension point="kodi.resource.images" compile="false" type="busyspinners" />
+		<requires>
+			<import addon="kodi.resource" version="1.0.0"/>
+		</requires>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Animated Busy Spinners Pack - Titan</summary>
+			<description lang="en">Animated Busy Spinners Pack - Titan</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+	<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+		<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+			<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+			<platform>all</platform>
+		</extension>
+	</addon>
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.25" provider-name="marcelveldt, cartmandos">
+		<requires>
+			<import addon="xbmc.python" version="2.13.0"/>
+			<import addon="xbmc.addon" version="12.0.0"/>
+			<import addon="script.module.simplejson" version="3.3.0"/>
+			<import addon="script.module.simplecache" version="1.0.0"/>
+			<import addon="script.module.metadatautils" version="1.0.0"/>
+			<import addon="script.module.cherrypy" version="11.0.0"/>
+		</requires>
+
+		<extension point="kodi.context.item">
+			<menu id="kodi.core.main">
+				<item library="resources\lib\context_animatedart.py">
+					<label>32024</label>
+					<visible>!IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible>
+				</item>
+				<item library="resources\lib\context_pvr.py">
+					<label>32023</label>
+					<description>PVR artwork Configuration</description>
+					<visible>
+						!IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
+						[Window.IsActive(MyPVRChannels.xml) |
+						Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
+						Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
+					</visible>
+				</item>
+				<item library="resources\lib\context_music.py">
+					<label>32023</label>
+					<description>Music artwork Configuration</description>
+					<visible>
+						!IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
+						[Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
+					</visible>
+				</item>
+			</menu>
+		</extension>
+
+		<extension point="xbmc.python.library" library="default.py" />
+		<extension point="xbmc.python.pluginsource" library="plugin.py">
+		</extension>
+		<extension library="service.py" point="xbmc.service" start="login" />
+
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Helper service for Kodi skins</summary>
+			<description>Helper service for Kodi skins</description>
+			<language></language>
+			<platform>all</platform>
+			<license>GPL v2.0</license>
+			<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+			<website></website>
+			<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+		</extension>
+	</addon>
 </addons>
