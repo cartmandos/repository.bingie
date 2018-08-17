@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.titan.leiabeta.bingie.mode" version="0.0.16" name="Titan bingie MODE for Kodi Leia" provider-name="marcelveldt, cartman.dos, mardukl, mgonzales">
+<addon id="skin.titan.leiabeta-bingie.MODE" version="0.0.17" name="Titan bingie MODE for Kodi Leia" provider-name="marcelveldt, cartman.dos, mardukl, mgonzales">
 	<requires>
 		<import version="5.13.0" addon="xbmc.gui"/>		
 		<import addon="script.skinshortcuts" version="0.6.5"/>
 		<import addon="script.skin.helper.service" version="1.0.0"/>
         <import addon="script.skin.helper.widgets" version="1.0.0"/>
         <import addon="script.skin.helper.backgrounds" version="1.0.0"/>
+		<import addon="script.user.rating" version="1.0.0"/>
         <import addon="resource.uisounds.titan.modern" version="1.0.0"/>
         <import addon="resource.images.skinbackgrounds.titanium" version="1.0.0"/>
         <import addon="resource.images.skinicons.wide" version="1.0.0"/>
         <import addon="resource.images.backgroundoverlays.basic" version="1.0.0"/>
 	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">		
+	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 		<res width="1920" height="1200" aspect="16:10" default="false" folder="1080i" />
 	</extension>
@@ -59,7 +60,7 @@
 			<screenshot>_screenshots/screenshot009.jpg</screenshot>
 		</assets>
 		<news>
-            Follow the forum thread about the latest news for the skin.
-        </news>
+			Follow the forum thread about the latest news for the skin.
+		</news>
 	</extension>
 </addon>
