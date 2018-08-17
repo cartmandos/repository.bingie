@@ -1,11 +1,11 @@
 # repository.bingie
 Kodi repository for bingie mode and more
 
-bingie repo link - for download & install in kodi:
+bingie Repo link - for download & install in kodi:
 https://cartmandos.github.io/repository.bingie/repository.bingie/repository.bingie-1.0.0.zip
 
-Ur add address - https://cartmandos.github.io/repository.bingie/repository.bingie/
-through file manager in kodi and install zip from there.
+Or add the following address - https://cartmandos.github.io/repository.bingie/repository.bingie/
+with file manager in kodi and install zip from there.
 
-Browse repo content:
+Browse repo content here:
 https://cartmandos.github.io/repository.bingie/
