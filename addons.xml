@@ -30,29 +30,29 @@
 			<res width="1920" height="1200" aspect="16:10" default="false" folder="1080i" />
 		</extension>
 		<extension point="xbmc.addon.metadata">
-			<summary lang="bg_BG">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="de_DE">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="en_AU">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="en_GB">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="en_NZ">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="en_US">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="es_ES">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="fi_FI">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="fr_FR">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="he_IL">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="hr_HR">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="hu_HU">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="it_IT">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="lt_LT">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="ms_MY">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="nl_NL">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="pl_PL">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="pt_BR">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="ru_RU">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="sr_RS">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="sr_RS@latin">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="tr_TR">Titan bingie mode for Kodi Leia</summary>
-			<summary lang="zh_CN">Titan bingie mode for Kodi Leia</summary>
+			<summary lang="bg_BG">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="de_DE">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="en_AU">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="en_GB">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="en_NZ">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="en_US">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="es_ES">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="fi_FI">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="fr_FR">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="he_IL">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="hr_HR">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="hu_HU">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="it_IT">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="lt_LT">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="ms_MY">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="nl_NL">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="pl_PL">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="pt_BR">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="ru_RU">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="sr_RS">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="sr_RS@latin">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="tr_TR">Titan bingie mode for Kodi Leia (beta)</summary>
+			<summary lang="zh_CN">Titan bingie mode for Kodi Leia (beta)</summary>
 			<platform>all</platform>
 			<license>GPL v2.0</license>
 			<forum>https://forum.kodi.tv/forumdisplay.php?fid=212</forum>
