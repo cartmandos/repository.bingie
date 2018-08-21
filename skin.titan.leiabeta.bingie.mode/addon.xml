@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.titan.leiabeta.bingie.mode" version="0.0.19" name="Titan bingie MODE for Kodi Leia" provider-name="marcelveldt, cartman.dos, mardukl, mgonzales">
+<addon id="skin.titan.leiabeta.bingie.mode" version="0.1.0" name="Titan bingie MODE for Kodi Leia" provider-name="cartman.dos, marcelveldt, mgonzales, mardukl">
 	<requires>
 		<import version="5.13.0" addon="xbmc.gui"/>		
 		<import addon="script.skinshortcuts" version="0.6.5"/>
@@ -42,13 +42,22 @@
 		<summary lang="zh_CN">Titan bingie mode for Kodi Leia</summary>
 		<platform>all</platform>
 		<license>GPL v2.0</license>
-		<forum>https://forum.kodi.tv/showthread.php?tid=330749</forum>
-		<website>https://forum.kodi.tv/showthread.php?tid=330749</website>
+		<forum>https://forum.kodi.tv/forumdisplay.php?fid=212</forum>
+		<website>https://forum.kodi.tv/forumdisplay.php?fid=212</website>
 		<email></email>
 		<source>https://github.com/cartmandos/skin.titan.bingie.mode</source>
 		<assets>
 			<icon>icon.png</icon>
-			<screenshot>screenshot000.png</screenshot>
+			<screenshot>_screenshots/screenshot000.jpg</screenshot>
+			<screenshot>_screenshots/screenshot001.jpg</screenshot>
+			<screenshot>_screenshots/screenshot002.jpg</screenshot>
+			<screenshot>_screenshots/screenshot003.jpg</screenshot>
+			<screenshot>_screenshots/screenshot004.jpg</screenshot>
+			<screenshot>_screenshots/screenshot005.jpg</screenshot>
+			<screenshot>_screenshots/screenshot006.jpg</screenshot>
+			<screenshot>_screenshots/screenshot007.jpg</screenshot>
+			<screenshot>_screenshots/screenshot008.jpg</screenshot>
+			<screenshot>_screenshots/screenshot009.jpg</screenshot>
 		</assets>
 		<news>
 			Follow the forum thread about the latest news for the skin.
