@@ -1,3 +1,8 @@
+1.1.26
+- Better behviour for playtraileryoutube method:
+	- Doublechecks for running busy dialog in backgroud (avoiding leading to crash)
+	- Fix youtube starts playing for previous item
+
 1.1.25
 - fixed playtrailer method (and also ignoring dirs on youtube)
 - added new method: playtraileryoutube
