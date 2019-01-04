@@ -1,0 +1,4 @@
+1.0.20
+- Added Leia support with backward compatibility
+	- (substring -> string.contains) 
+	- busydialog
