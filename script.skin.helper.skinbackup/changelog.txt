@@ -1,3 +1,7 @@
+1.0.21
+- Busydialog small fix
+- Minor fixes in code
+
 1.0.20
 - Added Leia support with backward compatibility
 	- (substring -> string.contains) 
