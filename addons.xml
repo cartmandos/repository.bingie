@@ -12,7 +12,7 @@
 			<platform>all</platform>
 		</extension>
 	</addon>
-	<addon id="skin.titan.leiabeta.bingie.mode" version="0.2.1" name="Titan bingie MODE for Kodi Leia" provider-name="cartman.dos, marcelveldt, mgonzales, mardukl">
+	<addon id="skin.titan.leiabeta.bingie.mode" version="0.3" name="Titan bingie MODE for Kodi Leia" provider-name="cartman.dos, marcelveldt, mgonzales, mardukl">
 		<requires>
 			<import version="5.14.0" addon="xbmc.gui"/>
 			<import addon="script.skinshortcuts" version="0.6.5"/>
@@ -116,59 +116,61 @@
 			<disclaimer />
 		</extension>
 	</addon>
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.28" provider-name="marcelveldt, cartmandos">
-		<requires>
-			<import addon="xbmc.python" version="2.13.0"/>
-			<import addon="xbmc.addon" version="12.0.0"/>
-			<import addon="script.module.simplejson" version="3.3.0"/>
-			<import addon="script.module.simplecache" version="1.0.0"/>
-			<import addon="script.module.metadatautils" version="1.0.0"/>
-			<import addon="script.module.cherrypy" version="11.0.0"/>
-		</requires>
 
-		<extension point="kodi.context.item">
-			<menu id="kodi.core.main">
-				<item library="resources\lib\context_animatedart.py">
-					<label>32024</label>
-					<visible>!IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible>
-				</item>
-				<item library="resources\lib\context_pvr.py">
-					<label>32023</label>
-					<description>PVR artwork Configuration</description>
-					<visible>
-						!IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
-						[Window.IsActive(MyPVRChannels.xml) |
-						Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
-						Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
-					</visible>
-				</item>
-				<item library="resources\lib\context_music.py">
-					<label>32023</label>
-					<description>Music artwork Configuration</description>
-					<visible>
-						!IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
-						[Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
-					</visible>
-				</item>
-			</menu>
-		</extension>
+    	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.29" provider-name="marcelveldt, cartmandos">
+	<requires>
+		<import addon="xbmc.python" version="2.13.0"/>
+		<import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.simplecache" version="1.0.0"/>
+        <import addon="script.module.metadatautils" version="1.0.0"/>
+        <import addon="script.module.cherrypy" version="11.0.0"/>
+	</requires>
 
-		<extension point="xbmc.python.library" library="default.py" />
-		<extension point="xbmc.python.pluginsource" library="plugin.py">
-		</extension>
-		<extension library="service.py" point="xbmc.service" start="login" />
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources\lib\context_animatedart.py">
+              <label>32024</label>
+              <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible>
+            </item>
+            <item library="resources\lib\context_pvr.py">
+                <label>32023</label>
+                <description>PVR artwork Configuration</description>
+                <visible>
+                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
+                    [Window.IsActive(MyPVRChannels.xml) |
+                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
+                    Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
+                </visible>
+            </item>
+            <item library="resources\lib\context_music.py">
+                <label>32023</label>
+                <description>Music artwork Configuration</description>
+                <visible>
+                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
+                    [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
+                </visible>
+            </item>
+        </menu>
+	</extension>
 
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Helper service for Kodi skins</summary>
-			<description>Helper service for Kodi skins</description>
-			<language></language>
-			<platform>all</platform>
-			<license>GPL v2.0</license>
-			<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-			<website></website>
-			<source>https://github.com/marcelveldt/script.skin.helper.service</source>
-		</extension>
-	</addon>
+    <extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+    </extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+		<website></website>
+		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+	</extension>
+</addon>
+
 	<addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.39" provider-name="marcelveldt,patrick-klein">
 		<requires>
 			<import addon="xbmc.python" version="2.24.0"/>
@@ -212,7 +214,7 @@
 			<source>https://github.com/marcelveldt/script.skin.helper.skinbackup</source>
 		</extension>
 	</addon>
-		<addon id="script.skin.helper.colorpicker" name="Skin Helper Service ColorPicker" version="1.0.13" provider-name="marcelveldt">
+	<addon id="script.skin.helper.colorpicker" name="Skin Helper Service ColorPicker" version="1.0.13" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -229,5 +231,44 @@
 		<website></website>
 		<source>https://github.com/marcelveldt/script.skin.helper.colorpicker</source>
 	</extension>
-</addon>
+	</addon>
+
+	<addon id="resource.images.skinicons.wide" name="Skin Icons - Wide" version="1.0.4" provider-name="marcelveldt, cartmandos">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Wide</summary>
+		<description lang="en">Skin Icons Pack - Wide</description>
+		<platform>all</platform>
+	</extension>
+	</addon>
+
+	<addon id="script.module.metadatautils"
+       name="Metadata and Artwork module"
+       version="1.0.20"
+       provider-name="marcelveldt,cartmandos">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8" />
+        <import addon="script.module.thetvdb" version="0.0.1" />
+        <import addon="script.module.musicbrainz" version="0.0.1" />
+        <import addon="script.module.simplecache" version="1.0.0"/>
+        <import addon="script.module.arrow" version="0.6.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Metadata and artwork from common sources like TMDB, IMDB, TADB and fanart.tv </summary>
+        <description>
+            The metadata and artwork module for Kodi provides rich metadata, including artwork for
+            various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv.[CR][CR]
+            This product uses the TMDb API but is not endorsed or certified by TMDb
+        </description>
+        <license>Apache 2.0</license>
+        <source>https://github.com/marcelveldt/script.module.metadatautils</source>
+        <platform>all</platform>
+    </extension>
+	</addon>
 </addons>

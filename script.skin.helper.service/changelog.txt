@@ -1,3 +1,9 @@
+1.1.29
+- Local trailers for tvshows integrated in playtraileryoutube as temp workaround, later to be seperate methods
+	Filename for recognizing tvshow trailers:
+	(1) file must be inside tvshow dir
+	(2) file name must be either 'tvshow-trailer'.ext or <tvshow-foldername>'-trailer'.ext
+
 1.1.28
 - Small revisit in playtrailers methods
 - Bugfix: search functionality hotfix (dialog object & mutils pointers)
