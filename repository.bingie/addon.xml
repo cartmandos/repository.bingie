@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.bingie" name="bingie repository" provider-name="cartmandos" version="1.0.0">
+<addon id="repository.bingie" name="BINGIE Repository" provider-name="cartman.dos" version="1.0.1">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
 	<extension name="bingie repository" point="xbmc.addon.repository">
 		<info compressed="false">https://raw.githubusercontent.com/cartmandos/repository.bingie/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/cartmandos/repository.bingie/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://raw.githubusercontent.com/cartmandos/repository.bingie/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi repository for bingie mod(e) and extras</summary>
-		<description lang="en">bingie repository currently under construction and in alpha stage</description>
+		<summary lang="en">Home of Titan BINGIE</summary>
+		<description lang="en">BINGIE repository</description>
 		<platform>all</platform>
 	</extension>
 </addon>

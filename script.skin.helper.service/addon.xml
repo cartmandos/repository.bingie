@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.29" provider-name="marcelveldt, cartmandos">
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.31" provider-name="marcelveldt, cartman.dos">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -49,6 +49,6 @@
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website></website>
-		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+		<source>https://github.com/cartmandos/script.skin.helper.service</source>
 	</extension>
 </addon>
