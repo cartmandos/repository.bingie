@@ -110,6 +110,7 @@
 			</news>
 		</extension>
 	</addon>
+    
     <!-- ADDONS -->
     <addon id="script.bingie.helper" name="Bingie Helper" version="1.0.0" provider-name="cartman.dos">
         <requires>
@@ -133,7 +134,6 @@
         </extension>
     </addon>
 
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.1.1" provider-name="marcelveldt,patrick-klein,cartman.dos">
         <requires>
             <import addon="xbmc.python" version="2.24.0"/>
@@ -162,14 +162,14 @@
         </extension>
     </addon>
 
-    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.31" provider-name="marcelveldt, cartman.dos">
+    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.32" provider-name="marcelveldt, cartman.dos">
         <requires>
             <import addon="xbmc.python" version="2.13.0"/>
             <import addon="xbmc.addon" version="12.0.0"/>
             <import addon="script.module.simplejson" version="3.3.0"/>
             <import addon="script.module.simplecache" version="1.0.0"/>
             <import addon="script.module.metadatautils" version="1.0.0"/>
-            <import addon="script.module.cherrypy" version="11.0.0"/>
+            <import addon="script.module.cherrypy" version="17.4.0"/>
         </requires>
 
         <extension point="kodi.context.item">
@@ -199,26 +199,6 @@
             </menu>
         </extension>
 
-        <addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.22" provider-name="marcelveldt, cartman.dos">
-            <requires>
-                <import addon="xbmc.python" version="2.13.0"/>
-                <import addon="xbmc.addon" version="12.0.0"/>
-            </requires>
-            <extension point="xbmc.python.script" library="default.py" />
-            <extension library="service.py" point="xbmc.service" start="login" />
-
-            <extension point="xbmc.addon.metadata">
-                <summary lang="en">Helper service for Kodi skins</summary>
-                <description>Helper service for Kodi skins</description>
-                <language></language>
-                <platform>all</platform>
-                <license>GPL v2.0</license>
-                <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-                <website></website>
-                <source>https://github.com/cartmandos/script.skin.helper.skinbackup</source>
-            </extension>
-        </addon>
-
         <extension point="xbmc.python.library" library="default.py" />
         <extension point="xbmc.python.pluginsource" library="plugin.py">
         </extension>
@@ -233,6 +213,26 @@
             <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
             <website></website>
             <source>https://github.com/cartmandos/script.skin.helper.service</source>
+        </extension>
+    </addon>
+
+    <addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.22" provider-name="marcelveldt, cartman.dos">
+        <requires>
+            <import addon="xbmc.python" version="2.13.0"/>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.python.script" library="default.py" />
+        <extension library="service.py" point="xbmc.service" start="login" />
+
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Helper service for Kodi skins</summary>
+            <description>Helper service for Kodi skins</description>
+            <language></language>
+            <platform>all</platform>
+            <license>GPL v2.0</license>
+            <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+            <website></website>
+            <source>https://github.com/cartmandos/script.skin.helper.skinbackup</source>
         </extension>
     </addon>
 
@@ -446,8 +446,8 @@
 
     <addon id="script.module.cherrypy"
            name="CherryPy Kodi module"
-           version="11.0.1"
-           provider-name="marcelveldt, CherryPy Team">
+           version="17.4.0"
+           provider-name="marcelveldt, TheTimeWalker, CherryPy Team">
         <requires>
             <import addon="xbmc.python" version="2.24.0"/>
             <import addon="script.module.six" version="1.9.0"/>
