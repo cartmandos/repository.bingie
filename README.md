@@ -1,11 +1,8 @@
 # repository.bingie
-Kodi repository for bingie mode and more
+Home of Skin TITAN BINGIE
 
-bingie Repo link - for download & install in kodi:
-https://cartmandos.github.io/repository.bingie/repository.bingie/repository.bingie-1.0.0.zip
+BINGIE Repository link - for download & install in Kodi:
+https://cartmandos.github.io/repository.bingie/repository.bingie/repository.bingie-1.0.1.zip
 
 Or add the following address - https://cartmandos.github.io/repository.bingie/repository.bingie/
 with file manager in kodi and install zip from there.
-
-Browse repo content here:
-https://cartmandos.github.io/repository.bingie/
