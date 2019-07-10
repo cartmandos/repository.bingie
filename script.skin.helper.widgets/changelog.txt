@@ -1,2 +1,7 @@
+1.1.2
+- Added 'Continue Watching' widget for episodes
+- Fixed listitem.path prop for tvshows
+1.1.0
+- Initial Release
 1.0.39
 - Hotfix for similar tvshows widgets
